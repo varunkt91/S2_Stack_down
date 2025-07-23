@@ -32,26 +32,31 @@ Ensure the following variables are defined in your `config.py`:
 The script uses helper functions imported from `helper_functions.py`:
 
 - `search_sentinel2_scene(...)`: Queries the STAC API and returns matching scenes.
-- `stack_bands_clipped(item, bands, output_file, aoi_path)`: Downloads, stacks, and clips the specified bands from a scene.
+- 
+- `stack_bands_clipped (item, band_keys, output_path, aoi_path, dst_crs="EPSG:32614", dst_res=30)`: Downloads, stacks, and clips the specified bands from a scene.
 - `log_failed_scene(scene_name, error)`: Logs failure messages.
-
+-  load_aoi_geometry(aoi_path, target_crs): Use to load aoi and perform reprojection.
+-  read_reproject_clip (asset_href, dst_crs, dst_res, clip_geom): Open image bands, reproject, resample, and clip to the AOI.
+-  log_failed_scene (scene_name, error, log_path=None): maintains log file in case something is broken
 ---
 
-## 🚀 Main Script Flow
+## 🚀 How to run
 
-1. Creates the output directory (if it doesn't exist).
-2. Searches for Sentinel-2 scenes using STAC API and user-defined filters.
-3. Iterates over the scenes:
-   - Downloads and stacks specified bands.
-   - Clips them to the provided AOI.
-   - Saves the output as a GeoTIFF.
-4. Logs any failed attempts.
+1. ## 🚀 How to Run
 
----
+1. **Open your terminal or Anaconda Prompt** and navigate to the project folder  
+   (this folder should contain all `.py` files and the `environment.yml` file):
+   ```bash
+   cd path/to/your/project
+   
+2. Create the Conda environment using the YAML file:
+   - cd path/to/your/yml/file
+   - conda env create -f environment.yml
 
-## 🔧 Command-Line Usage
+3. Activate the environment (the environment is named S2_download):
+   - conda activate S2_download
+5. (Optional): Update the input variables in the config.py file if needed. By default, they are configured based on the take-home assignment requirements.
+   
+7. Run the script to download the latest available Sentinel-2 image:
+   conda run -n S2_download python main.py --max_items 1
 
-You can run the script from the command line with the following syntax:
-
-```bash
-python main_script.py --max_items 3

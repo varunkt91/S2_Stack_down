@@ -62,3 +62,18 @@ The script uses helper functions imported from `helper_functions.py`:
    ```bash
    conda run -n S2_download python main.py --max_items 1
 
+<h2>🚀 Overall Workflow</h2>
+
+<p>
+  The process for downloading and preparing Sentinel-2 imagery follows these key steps:
+</p>
+
+<ol>
+  <li>Query the STAC API to retrieve available Sentinel-2 scenes.</li>
+  <li>Reproject each image band to the target coordinate reference system (CRS).</li>
+  <li>Resample the bands to a consistent spatial resolution.</li>
+  <li>Clip each band to the area of interest (AOI).</li>
+  <li>Stack the clipped bands into a single multi-band image.</li>
+  <li>Save the final stacked image as a Cloud-Optimized GeoTIFF (COG).</li>
+</ol>
+

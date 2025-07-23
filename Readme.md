@@ -32,7 +32,6 @@ Ensure the following variables are defined in your `config.py`:
 The script uses helper functions imported from `helper_functions.py`:
 
 - `search_sentinel2_scene(...)`: Queries the STAC API and returns matching scenes.
-- 
 - `stack_bands_clipped (item, band_keys, output_path, aoi_path, dst_crs="EPSG:32614", dst_res=30)`: Downloads, stacks, and clips the specified bands from a scene.
 - `log_failed_scene(scene_name, error)`: Logs failure messages.
 -  load_aoi_geometry(aoi_path, target_crs): Use to load aoi and perform reprojection.

@@ -1,0 +1,14 @@
+name: S2_download
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - rasterio
+  - fiona
+  - pyproj
+  - shapely
+  - pip
+  - pip:
+      - pystac-client
+      - requests
+      - numpy

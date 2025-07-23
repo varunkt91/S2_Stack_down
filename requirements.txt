@@ -1,0 +1,8 @@
+python>=3.8
+rasterio
+pystac-client
+numpy
+requests
+fiona
+pyproj
+shapely

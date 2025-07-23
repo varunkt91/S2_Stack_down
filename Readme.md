@@ -34,9 +34,9 @@ The script uses helper functions imported from `helper_functions.py`:
 - `search_sentinel2_scene(...)`: Queries the STAC API and returns matching scenes.
 - `stack_bands_clipped (item, band_keys, output_path, aoi_path, dst_crs="EPSG:32614", dst_res=30)`: Downloads, stacks, and clips the specified bands from a scene.
 - `log_failed_scene(scene_name, error)`: Logs failure messages.
--  'load_aoi_geometry(aoi_path, target_crs)': Use to load aoi and perform reprojection.
--  'read_reproject_clip (asset_href, dst_crs, dst_res, clip_geom)': Open image bands, reproject, resample, and clip to the AOI.
--  'log_failed_scene (scene_name, error, log_path=None)': maintains log file in case something is broken
+- 'load_aoi_geometry(aoi_path, target_crs)': Use to load aoi and perform reprojection.
+- 'read_reproject_clip (asset_href, dst_crs, dst_res, clip_geom)': Open image bands, reproject, resample, and clip to the AOI.
+- 'log_failed_scene (scene_name, error, log_path=None)': maintains log file in case something is broken
 ---
 
 ## 🚀 How to run
@@ -60,6 +60,7 @@ The script uses helper functions imported from `helper_functions.py`:
 7. Run the script to download the latest available Sentinel-2 image (max_items is set to 1 because we want to download the latest image):
    ```bash
    conda run -n S2_download python main.py --max_items 1
+--
 
 <h2>🚀 Overall Workflow</h2>
 
@@ -75,7 +76,7 @@ The script uses helper functions imported from `helper_functions.py`:
   <li>Stack the clipped bands into a single multi-band image.</li>
   <li>Save the final stacked image as a Cloud-Optimized GeoTIFF (COG).</li>
 </ol>
-
+--
 <h2>🚀 Future Improvements</h2>
 
 <ol>

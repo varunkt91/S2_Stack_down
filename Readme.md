@@ -42,8 +42,6 @@ The script uses helper functions imported from `helper_functions.py`:
 
 ## 🚀 How to run
 
-1. ## 🚀 How to Run
-
 1. **Open your terminal or Anaconda Prompt** and navigate to the project folder  
    (this folder should contain all `.py` files and the `environment.yml` file):
    ```bash

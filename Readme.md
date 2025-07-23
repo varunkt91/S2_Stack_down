@@ -58,7 +58,7 @@ The script uses helper functions imported from `helper_functions.py`:
    
 5. (Optional): Update the input variables in the config.py file if needed. By default, they are configured based on the take-home assignment requirements.
    
-7. Run the script to download the latest available Sentinel-2 image:
+7. Run the script to download the latest available Sentinel-2 image (max_items is set to 1 because we want to download the latest image):
    ```bash
    conda run -n S2_download python main.py --max_items 1
 

@@ -55,9 +55,12 @@ The script uses helper functions imported from `helper_functions.py`:
    - conda env create -f environment.yml
 
 4. Activate the environment (the environment is named S2_download):
-   - conda activate S2_download
+   ```bash
+     conda activate S2_download
+   
 5. (Optional): Update the input variables in the config.py file if needed. By default, they are configured based on the take-home assignment requirements.
    
 7. Run the script to download the latest available Sentinel-2 image:
+   ```bash
    conda run -n S2_download python main.py --max_items 1
 

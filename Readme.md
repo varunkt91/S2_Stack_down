@@ -77,3 +77,13 @@ The script uses helper functions imported from `helper_functions.py`:
   <li>Save the final stacked image as a Cloud-Optimized GeoTIFF (COG).</li>
 </ol>
 
+<h2>🚀 Future Improvements</h2>
+
+<ol>
+  <li>Implement an automated routine to query the STAC API and download new Sentinel-2 images daily at a scheduled time whenever new data is available.</li>
+  <li>Incorporate cloud masking using the QA60 band and cloud probability band to better remove clouds from imagery.</li>
+  <li>Optimize the script to reduce processing time and improve efficiency.</li>
+  <li>Add robust exception handling with logging to capture and manage errors effectively.</li>
+  <li>Extend functionality to handle multiple areas of interest (AOIs) for batch downloading and preprocessing of data.</li>
+</ol>
+   

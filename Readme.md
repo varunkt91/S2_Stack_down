@@ -50,10 +50,11 @@ The script uses helper functions imported from `helper_functions.py`:
    cd path/to/your/project
    
 2. Create the Conda environment using the YAML file:
+   ```bash
    - cd path/to/your/yml/file
    - conda env create -f environment.yml
 
-3. Activate the environment (the environment is named S2_download):
+4. Activate the environment (the environment is named S2_download):
    - conda activate S2_download
 5. (Optional): Update the input variables in the config.py file if needed. By default, they are configured based on the take-home assignment requirements.
    

@@ -81,7 +81,8 @@ The script uses helper functions imported from `helper_functions.py`:
 
 <ol>
   <li>Implement an automated routine to query the STAC API and download new Sentinel-2 images daily at a scheduled time whenever new data is available.</li>
-  <li>Incorporate cloud masking using the QA60 band and cloud probability band to better remove clouds from imagery.</li>
+   <li> "Use parallelization frameworks like Dask and Apache Sedona to accelerate large-scale geospatial data processing. While they do not directly reduce image download time, they significantly improve processing performance when working with multiple files or large datasets in parallel.
+  <li>Incorporate cloud masking using the QA60 band and cloud probability band to remove clouds from imagery.</li>
   <li>Optimize the script to reduce processing time and improve efficiency.</li>
   <li>Add robust exception handling with logging to capture and manage errors effectively.</li>
   <li>Extend functionality to handle multiple areas of interest (AOIs) for batch downloading and preprocessing of data.</li>

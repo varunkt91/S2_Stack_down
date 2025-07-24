@@ -21,7 +21,7 @@ S2_Stack_down/
 
 ├── helper_functions.py
 
-→ Includes utility functions for searching, stacking, and logging
+→ Includes utility functions for searching, reprojecting, resampling, clipping stacking, and logging
 
 ├── aoi.geojson
 

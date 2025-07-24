@@ -6,11 +6,7 @@ This script automates the search, download, and band stacking of Sentinel-2 imag
 
 ## 📁 Project Structure
 
-├── main_script.py # The script documented here
-├── config.py # Configuration constants
-├── helper_functions.py # Utility functions for search, stacking, and logging
-├── aoi.geojson # AOI file (if referenced in config)
-└── output/ # Output directory for stacked TIFFs
+<pre> ├── main_script.py # The main script documented in this README ├── config.py # Configuration file with constants and parameters ├── helper_functions.py # Utility functions for searching, stacking, logging, etc. ├── aoi.geojson # Area of Interest (AOI) file, referenced in config.py └── output/ # Directory where stacked TIFFs will be saved </pre>
 
 ## ⚙️ Configuration (`config.py`)
 

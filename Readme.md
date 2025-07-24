@@ -10,14 +10,21 @@ S2_Stack_down/
 
 ├── main_script.py
 
+
 → The main script documented in this README
+
+
 ├── config.py
 
 → Contains configuration constants and parameters
+
+
 ├── helper_functions.py
 
 → Includes utility functions for searching, stacking, and logging
+
 ├── aoi.geojson
+
 
 → GeoJSON file defining the Area of Interest (AOI)
 └── output/

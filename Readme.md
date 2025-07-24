@@ -39,9 +39,9 @@ Ensure the following variables are defined in your `config.py`:
 
 - `STAC_API`: URL of the STAC API endpoint (e.g., `https://earth-search.aws.element84.com/v1`)
 - `BBOX`: Bounding box for the search query `[minLon, minLat, maxLon, maxLat]`
-- `DATE_RANGE`: Date range as a tuple, e.g., `("2023-01-01", "2023-12-31")`
+- `DATE_RANGE`: Date range as a tuple, e.g., `("2023-01-01", "2025-12-31")`
 - `CLOUD_FILTER`: Maximum cloud coverage (e.g., `10`)
-- `BANDS`: List of band names to include (e.g., `["B04", "B03", "B02"]`)
+- `BANDS`: List of band names to include (e.g., `["blue", "swir2"]`)
 - `OUT_DIR`: Output folder for saving the processed TIFFs
 - `AOI_PATH`: File path to your AOI GeoJSON or shapefile
 - `NUMBER_OF_IMG_DOWNLOAD`: Default number of scenes to process if not specified in CLI

@@ -11,7 +11,7 @@ S2_Stack_down/
 ├── main_script.py
 
 
-→ The main script documented in this README
+→ The main script is documented in this README
 
 
 ├── config.py
@@ -41,7 +41,7 @@ Ensure the following variables are defined in your `config.py`:
 - `BBOX`: Bounding box for the search query `[minLon, minLat, maxLon, maxLat]`
 - `DATE_RANGE`: Date range as a tuple, e.g., `("2023-01-01", "2025-12-31")`
 - `CLOUD_FILTER`: Maximum cloud coverage (e.g., `10`)
-- `BANDS`: List of band names to include (e.g., `["blue", "swir2"]`)
+- `BANDS`: List of band names to include (e.g., `["blue", "swir16"]`)
 - `OUT_DIR`: Output folder for saving the processed TIFFs
 - `AOI_PATH`: File path to your AOI GeoJSON or shapefile
 - `NUMBER_OF_IMG_DOWNLOAD`: Default number of scenes to process if not specified in CLI

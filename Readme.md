@@ -1,4 +1,3 @@
-# S2_Stack_down
 
 # Sentinel-2 Image Downloader and Processor
 

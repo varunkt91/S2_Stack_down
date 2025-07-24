@@ -5,7 +5,6 @@
 This script automates the search, download, and band stacking of Sentinel-2 imagery using STAC API. It clips the imagery to a defined Area of Interest (AOI) and saves the processed files locally.
 
 ## 📁 Project Structure
-
 <pre> ├── main_script.py # The main script documented in this README ├── config.py # Configuration file with constants and parameters ├── helper_functions.py # Utility functions for searching, stacking, logging, etc. ├── aoi.geojson # Area of Interest (AOI) file, referenced in config.py └── output/ # Directory where stacked TIFFs will be saved </pre>
 
 ## ⚙️ Configuration (`config.py`)

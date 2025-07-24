@@ -27,6 +27,8 @@ S2_Stack_down/
 
 
 → GeoJSON file defining the Area of Interest (AOI)
+
+
 └── output/
 
 → Folder where stacked and processed TIFFs are saved

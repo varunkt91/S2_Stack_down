@@ -6,6 +6,8 @@ This script automates the search, download, and band stacking of Sentinel-2 imag
 
 ## 📁 Project Structure
 S2_Stack_down/
+
+
 ├── main_script.py
 
 → The main script documented in this README
